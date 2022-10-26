@@ -42,9 +42,9 @@ namespace Q3
 			DateTime birthday = GetDateTime();
 			int nowYear  = now.Year;
 			int birthYear = birthday.Year;
-			int yearsOld = nowYear - birthYear;
+			int age = nowYear - birthYear;
 			int standard = 13;
-			return yearsOld >= standard ? $"已年滿{standard}歲" : $"尚未年滿{standard}歲";
+			return age >= standard ? $"已年滿{standard}歲" : $"尚未年滿{standard}歲";
 		}
 
 		private DateTime GetDateTime()
